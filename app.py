@@ -9,7 +9,7 @@ def home():
   return render_template("index.html")
 
 
-@app.route("/handel_data")
+@app.route("/handel_data", methods=['POST'])
 def handel_data():
   st_name = request.form.get("student_name")
   sat_score = request.form.get("sat_score")
