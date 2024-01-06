@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPA Prediction</title>
+
+</head>
+<body>
+
+    <h1>GPA Prediction using SAT Score</h1>
+
+    <form action="/handel_data" method="POST">
+        Name<br>
+            <input type="text" name="student_name"> <br>
+        SAT score<br>
+            <input type="text" name="sat_score"><br><br>
+        <input type="submit">
+    </form>
+
+    <p id="rest">{{rest}}</p>
+
+</body>
+</html>
